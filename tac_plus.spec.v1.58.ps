@@ -1,0 +1,6505 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 4.0, for use with Frame 4.0 products
+% This ps_prolog file is Copyright (c) 1986-1993 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameBuilder and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to True, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (4.0) def 
+/FMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	FMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto
+	show FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(PostScript Lang. Ref. Man., 2nd Ed., H.2.4 says EPS must not call X              )
+	dup dup (X) search pop exch pop exch pop length 
+	4 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/FMLOCAL {
+	FrameDict begin
+	0 def 
+	end 
+	} def 
+/concatprocs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin 
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/FrameNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		setrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+FMLevel1 not { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} if
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				FMPColor graymode and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode FMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not FMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/dmatrix matrix def
+/dpi    72 0 dmatrix defaultmatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 dmatrix defaultmatrix dtransform exch atan def
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	FMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	/gstring FMLOCAL
+	/gfile FMLOCAL
+	/gindex FMLOCAL
+	/orgrxfer FMLOCAL
+	/orggxfer FMLOCAL
+	/orgbxfer FMLOCAL
+	/orgxfer FMLOCAL
+	/orgproc FMLOCAL
+	/orgrproc FMLOCAL
+	/orggproc FMLOCAL
+	/orgbproc FMLOCAL
+	/organgle FMLOCAL
+	/orgrangle FMLOCAL
+	/orggangle FMLOCAL
+	/orgbangle FMLOCAL
+	/orgfreq FMLOCAL
+	/orgrfreq FMLOCAL
+	/orggfreq FMLOCAL
+	/orgbfreq FMLOCAL
+	/yscale FMLOCAL
+	/xscale FMLOCAL
+	/edown FMLOCAL
+	/manualfeed FMLOCAL
+	/paperheight FMLOCAL
+	/paperwidth FMLOCAL
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /FrameNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	FMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{{1 dict dup /PageSize [paperwidth paperheight]put setpagedevice}stopped
+		{ (Can't select requested paper size for Frame print job!) FMFAILURE } if
+		 {1 dict dup /ManualFeed manualfeed put setpagedevice } stopped pop }
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			FrameNegative {
+				1 1 4 { 
+					pop { 1 exch sub } concatprocs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		FrameNegative {
+			{ 1 exch sub } concatprocs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/pagesave FMLOCAL
+/orgmatrix FMLOCAL
+/landscape FMLOCAL
+/pwid FMLOCAL
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	0.0 0.0 moveto
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+	/fx FMLOCAL
+	/fy FMLOCAL
+	/fh FMLOCAL
+	/fw FMLOCAL
+	/llx FMLOCAL
+	/lly FMLOCAL
+	/urx FMLOCAL
+	/ury FMLOCAL
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/initmatrix {(initmatrix) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+	/papersizedict FMLOCAL
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+	/bwidth FMLOCAL
+	/bpside FMLOCAL
+	/bstring FMLOCAL
+	/onbits FMLOCAL
+	/offbits FMLOCAL
+	/xindex FMLOCAL
+	/yindex FMLOCAL
+	/x FMLOCAL
+	/y FMLOCAL
+/setPatternMode {
+	FMLevel1 {
+		/bwidth  exch def
+		/bpside  exch def
+		/bstring exch def
+		/onbits 0 def  /offbits 0 def
+		freq sangle landscape {90 add} if 
+			{/y exch def
+			 /x exch def
+			 /xindex x 1 add 2 div bpside mul cvi def
+			 /yindex y 1 add 2 div bpside mul cvi def
+			 bstring yindex bwidth mul xindex 8 idiv add get
+			 1 7 xindex 8 mod sub bitshift and 0 ne FrameNegative {not} if
+			 {/onbits  onbits  1 add def 1}
+			 {/offbits offbits 1 add def 0}
+			 ifelse
+			}
+			setscreen
+		offbits offbits onbits add div FrameNegative {1.0 exch sub} if
+		/FrameCurGray exch def
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		FMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode FMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode FMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+	/fillvals FMLOCAL
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+	/n FMLOCAL
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+	/x1 FMLOCAL
+	/x2 FMLOCAL
+	/y1 FMLOCAL
+	/y2 FMLOCAL
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+	/rad FMLOCAL
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+	/FMpointsize FMLOCAL
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+	/x FMLOCAL
+	/y FMLOCAL
+	/w FMLOCAL
+	/h FMLOCAL
+	/xx FMLOCAL
+	/yy FMLOCAL
+	/ww FMLOCAL
+	/hh FMLOCAL
+	/FMsaveobject FMLOCAL
+	/FMoptop FMLOCAL
+	/FMdicttop FMLOCAL
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+	/str FMLOCAL
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+	/sl FMLOCAL
+	/val FMLOCAL
+	/ws FMLOCAL
+	/im FMLOCAL
+	/bs FMLOCAL
+	/cs FMLOCAL
+	/len FMLOCAL
+	/pos FMLOCAL
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+	/h FMLOCAL
+	/w FMLOCAL
+	/d FMLOCAL
+	/lb FMLOCAL
+	/bitmapsave FMLOCAL
+	/is FMLOCAL
+	/cf FMLOCAL
+/wbytes { 
+      dup dup
+      24 eq { pop pop 3 mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	r                    
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/r exch def
+	/d exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def 
+	r                    
+	/is w d wbytes string def
+	/cf currentfile def 
+	w h d [w 0 0 h neg 0 h] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+	/gryt FMLOCAL
+	/blut FMLOCAL
+	/grnt FMLOCAL
+	/redt FMLOCAL
+	/indx FMLOCAL
+	/cynu FMLOCAL
+	/magu FMLOCAL
+	/yelu FMLOCAL
+	/k FMLOCAL
+	/u FMLOCAL
+FMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/k cynu magu min yelu min def
+		/u k currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 k currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+	/tran FMLOCAL
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch concatprocs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/bitmapsave save def
+	FMLevel1 {	
+		colorsetup
+		/is w d wbytes string def
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is w d wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/d 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	FMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		w h d [w 0 0 h neg 0 h] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width w def
+			/Height h def
+			/ImageMatrix [w 0 0 h neg 0 h] def
+			/DataSource {ip} bind def
+			/BitsPerComponent d def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/d 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris} {gis} {bis} true 3 colorimage
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/d 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/h exch def /w exch def
+	/lb w d wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 w getinterval def	
+	/gis im w w getinterval def	
+	/bis im w 2 mul w getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        {w rip pop ris gis bis w gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/ww FMLOCAL
+/r FMLOCAL
+/g FMLOCAL
+/b FMLOCAL
+/i FMLOCAL
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/h exch def /w exch def
+        /bitmapsave save def 
+        /is w string def
+        /gis w string def
+        /bis w string def
+        /cf currentfile def 
+        w h 8 [w 0 0 h neg 0 h] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop w gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDsave FMLOCAL
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(4.0) FMVERSION
+1 1 0 0 612 792 0 1 9 FMDOCUMENT
+0 0 /Times-Roman FMFONTDEFINE
+1 0 /Times-Bold FMFONTDEFINE
+2 0 /Courier FMFONTDEFINE
+3 0 /Courier-Bold FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "1" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 1 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Document Number) 324 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ENG-####) 432 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Revision) 324 699.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(1.58) 432 699.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Author) 324 685.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Dave Carrel) 432 685.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(Pr) 324 671.33 T
+(oject Manager) 334.37 671.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Project manager name) 432 671.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 18 Q
+(T) 264.54 638 T
+(ACACS+) 275.21 638 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Pr) 222.42 598 T
+(otocol Speci\336cation) 241.08 598 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+275.61 562.81 262.95 562.81 2 L
+V
+1.14 H
+0 Z
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(Pr) 262.95 564 T
+0 0 0 1 0 0 0 K
+349.05 562.81 275.39 562.81 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(oject Headline) 275.39 564 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(This is the T) 72 546.33 T
+(ACACS+ protocol speci\336cation. T) 121.48 546.33 T
+(ACACS+ is an access control protocol used in cisco products. It) 259.65 546.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(provides the services of Authentication, Authorization and Accounting) 72 534.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+333.82 505.81 278.18 505.81 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+( Reviewers) 278.18 507 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+359.5 364.81 252.5 364.81 2 L
+V
+N
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Modi\336cation History) 252.5 366 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+(Department) 130.77 477.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Name) 300.7 477.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.54 (Acceptance) 438.17 483.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Date) 452.61 471.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+(Engineering) 123 450 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Name \050T) 202.2 450 T
+(itle\051) 244.76 450 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Date) 436.2 450 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Engineering) 123 414 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Name \050T) 202.2 414 T
+(itle\051) 244.76 414 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Date) 436.2 414 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+(Rev) 117.67 339.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Date) 170.01 339.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Originator) 228.95 339.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Comment) 374.89 339.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+(1.49) 114 320 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(26 Jan 95) 150 320 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dave Carrel) 222 320 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(imported from ascii version) 294 320 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.50) 114 302 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(28 Jan 95) 150 302 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dave Carrel) 222 302 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.23 (changed msg and data lengths to two bytes) 294 302 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.51) 114 284 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(31 Jan 95) 150 284 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dave Carrel) 222 284 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Just made it prettier) 294 284 T
+(.) 388.33 284 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.52) 114 266 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(2 Feb 95) 150 266 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dave Carrel) 222 266 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(enhanced the intro and added some attrs) 294 266 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.54) 114 248 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(13 April 95) 150 248 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dave Carrel) 222 248 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(added \322event_id\323 and cleaned up text.) 294 248 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.55) 114 230 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(24 April 95) 150 230 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Dave Carrel) 222 230 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(added protocol value \322unknown\323.) 294 230 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Changed protocol values to lowercase.) 294 216 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.57) 114 198 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(19 May 95) 150 198 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Lol Grant) 222 198 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(added zonelist attribute) 294 198 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1.58) 114 180 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(31 May 95) 150 180 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Lol Grant) 222 180 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Bring revision numbers up to date) 294 180 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+117 497.75 117 390.25 2 L
+V
+0.25 H
+N
+196.2 498.25 196.2 389.75 2 L
+V
+0.5 H
+N
+430.2 498.25 430.2 389.75 2 L
+V
+N
+495 497.75 495 390.25 2 L
+V
+0.25 H
+N
+116.88 498 495.12 498 2 L
+V
+0.5 H
+N
+117.12 463.25 494.88 463.25 2 L
+V
+N
+117.12 460.75 494.88 460.75 2 L
+V
+N
+116.88 426 495.12 426 2 L
+V
+N
+116.88 390 495.12 390 2 L
+V
+N
+108 351.75 108 174.25 2 L
+V
+2 H
+N
+144 352.25 144 173.75 2 L
+V
+0.5 H
+N
+216 352.25 216 173.75 2 L
+V
+N
+288 352.25 288 173.75 2 L
+V
+N
+504 351.75 504 174.25 2 L
+V
+0.25 H
+N
+107 352 504.12 352 2 L
+V
+0.5 H
+N
+109 333.25 503.88 333.25 2 L
+V
+N
+109 330.75 503.88 330.75 2 L
+V
+N
+107 314 504.12 314 2 L
+V
+N
+107 296 504.12 296 2 L
+V
+N
+107 278 504.12 278 2 L
+V
+N
+107 260 504.12 260 2 L
+V
+N
+107 242 504.12 242 2 L
+V
+N
+107 210 504.12 210 2 L
+V
+N
+107 192 504.12 192 2 L
+V
+N
+107 174 504.12 174 2 L
+V
+N
+270 360 23.54 32.36 72 714.75 G
+270 360 23.54 32.36 72 714.75 A
+89.65 693.38 89.65 682.39 2 L
+V
+N
+83.77 686.84 83.77 682.93 2 L
+V
+N
+86.65 689.54 86.65 682.52 2 L
+V
+N
+92.59 698.98 92.59 682.39 2 L
+V
+N
+95.54 714.75 95.54 682.39 2 L
+V
+N
+80.83 684.82 80.83 682.93 2 L
+V
+N
+180 270 23.54 32.36 122.01 714.75 G
+180 270 23.54 32.36 122.01 714.75 A
+104.36 693.38 104.36 682.39 2 L
+V
+N
+110.25 686.84 110.25 682.93 2 L
+V
+N
+107.37 689.54 107.37 682.52 2 L
+V
+N
+101.42 698.98 101.42 682.39 2 L
+V
+N
+98.48 714.75 98.48 682.39 2 L
+V
+N
+113.19 684.82 113.19 682.93 2 L
+V
+N
+95.6 714.75 98.54 714.75 2 L
+V
+N
+150.14 722.22 153.08 722.22 2 L
+V
+N
+270 360 23.54 32.36 122.21 714.75 G
+270 360 23.54 32.36 122.21 714.75 A
+139.86 693.38 139.86 682.39 2 L
+V
+N
+133.98 686.84 133.98 682.93 2 L
+V
+N
+136.85 689.54 136.85 682.52 2 L
+V
+N
+142.8 698.98 142.8 682.39 2 L
+V
+N
+145.74 714.75 145.74 682.39 2 L
+V
+N
+131.03 684.82 131.03 682.93 2 L
+V
+N
+180 270 23.54 32.36 172.22 714.75 G
+180 270 23.54 32.36 172.22 714.75 A
+154.57 693.38 154.57 682.39 2 L
+V
+N
+160.45 686.84 160.45 682.93 2 L
+V
+N
+157.57 689.54 157.57 682.52 2 L
+V
+N
+151.63 698.98 151.63 682.39 2 L
+V
+N
+148.68 714.75 148.68 682.39 2 L
+V
+N
+163.4 684.82 163.4 682.93 2 L
+V
+N
+145.8 714.75 148.75 714.75 2 L
+V
+N
+156.78 715.58 159.72 715.58 2 L
+V
+N
+72 714.75 172.21 722.22 R
+V
+N
+1 14 Q
+(cisco Systems) 83.36 668.94 T
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "1" 1
+%%Page: "2" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 2 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(1.0) 72 684 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Intr) 97.2 684 T
+(oduction) 117.65 684 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(The T) 90 666.33 T
+(ACACS+ protocol is the next generation of T) 113.36 666.33 T
+(ACACS. T) 295.13 666.33 T
+(ACACS is a simple UDP based access control) 338.78 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(protocol originally developed by BBN for the MILNET) 72 654.33 T
+(. cisco has enhanced \050extended\051 T) 294.29 654.33 T
+(ACACS several times, and) 429 654.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (cisco\325) 72 642.33 P
+-0.02 (s current implementation, based on the original T) 95.33 642.33 P
+-0.02 (ACACS, is referred to as XT) 291.56 642.33 P
+-0.02 (ACACS. The T) 406.73 642.33 P
+-0.02 (ACACS protocol) 468.38 642.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (is described in [2]. T) 72 630.33 P
+-0.01 (ACACS+ improves on T) 154.19 630.33 P
+-0.01 (ACACS and XT) 253.16 630.33 P
+-0.01 (ACACS by separating the functions of Authentication,) 318.44 630.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Authorization and Accounting. It allows for arbitrary authentication exchanges which will allow any authentication) 72 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mechanism to be utilized with T) 72 606.33 T
+(ACACS+ clients. It is extensible to provide for site customization and future) 200.36 606.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (development features. And it uses TCP for reliable delivery) 72 594.33 P
+-0.31 (. The protocol allows the T) 307.44 594.33 P
+-0.31 (ACACS+ client to request very) 413.42 594.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\336ne grained access control and allows the server to respond to each component of that request.) 72 582.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The separation of authentication, authorization and accounting is a fundamental component of the design of) 90 566.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 72 554.33 T
+(ACACS+. The distinction between them is very important so this document will address each one separately) 77.31 554.33 T
+(. It is) 511.7 554.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(important to note that T) 72 542.33 T
+(ACACS+ provides for all three, but an implementation or con\336guration is not required to) 166.2 542.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(employ all three. Each one serves a unique purpose that alone is useful, and together can be quite powerful.) 72 530.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.06 (T) 90 514.33 P
+-0.06 (ACACS+ uses TCP for it\325) 95.31 514.33 P
+-0.06 (s transport. The server must listen at port 49 which is the \322LOGIN\323 port. This port is) 199.62 514.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(reserved in the assigned numbers RFC for both UDP and TCP) 72 502.33 T
+(. Current T) 319.76 502.33 T
+(ACACS and extended T) 363.12 502.33 T
+(ACACS) 459.81 502.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(implementations use UDP port 49.) 72 490.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(2.0) 72 463 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(De\336nitions) 97.2 463 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 10 Q
+(2.1) 97.2 445.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Authentication) 122.4 445.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Authentication is the action of determining who a user \050or entity\051 is. Authentication can take many forms.) 90 429.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 72 417.33 T
+(raditional authentication utilizes a name and a \336xed password. Most computers work this way) 77.76 417.33 T
+(, and T) 452.62 417.33 T
+(ACACS+ can) 479.87 417.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(work this way) 72 405.33 T
+(. But \336xed passwords have limitations, mainly in the area of security) 128.01 405.33 T
+(. Many modern authentication) 402.06 405.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mechanisms utilize \322one-time\323 passwords or a challenge-response query) 72 393.33 T
+(. T) 361.56 393.33 T
+(ACACS+ is designed to support all of) 371.87 393.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(these, and just about any future mechanisms. Authentication generally takes place when the user \336rst logs in to a) 72 381.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(machine or requests a service of it. Authentication is not mandatory) 72 369.33 T
+(, it is a site con\336gured option. Some sites do not) 342.14 369.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.29 (require it. Others require it only for certain services \050see authorization below\051. Authentication also takes place when a) 72 357.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(user attempts to gain extra privileges, and must identify themselves as someone who possesses the required) 72 345.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(information \050passwords, etc., ...\051 for those privileges.) 72 333.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(2.2) 97.2 317.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Authorization) 122.4 317.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.18 (It is important to distinguish Authorization from Authentication. Authorization is the action of determining what) 90 301.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a user is allowed to do. Generally authentication precedes authorization, but again, this is not required. An) 72 289.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.32 (authorization request may indicate that the user is not authenticated \050we don\325) 72 277.33 P
+-0.32 (t know who they are\051. In this case it is up) 376.31 277.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(to the authorization agent to determine if an unauthenticated user is allowed the services in question. In T) 72 265.33 T
+(ACACS+,) 492.8 265.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (authorization does not merely provide yes or no answers, but it may also customize the service for the particular user) 72 253.33 P
+-0.21 (.) 535.21 253.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.35 (Examples of when authentication would be performed are: When a user \336rst logs in and wants to start a shell, or when) 72 241.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (a user starts PPP and wants to use IP on top of PPP with a particular IP address. The T) 72 229.33 P
+-0.22 (ACACS+ server might respond) 412.48 229.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(to these requests by allowing the service, but placing a time restriction on the login shell, or requiring IP access lists) 72 217.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(on the PPP connection. For a complete list of authorization attributes, see the authorization section below) 72 205.33 T
+(.) 492.7 205.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(2.3) 97.2 189.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Accounting) 122.4 189.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Accounting is typically the third action after authentication and authorization. But again, neither authentication) 90 173.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.28 (or authorization are required. Accounting is the action of recording what a user is doing, and/or has done. Accounting) 72 161.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(in T) 72 149.33 T
+(ACACS+ can serve two purposes. It may be used to account for services used, such as in a billing environment.) 87.59 149.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(And it may also be used as an auditing tool for security services. T) 72 137.33 T
+(o this end, T) 337.93 137.33 T
+(ACACS+ supports three types of) 387.13 137.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.09 (accounting records. Start records indicate that a service is about to begin. Stop records indicate that a service has just) 72 125.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(terminated. And Update records are intermediate notices that indicate that a service is still being performed.) 72 113.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 72 101.33 T
+(ACACS+ accounting records contain all the information used in the authorization records, and also contain) 77.31 101.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(accounting speci\336c information such as start and stop times \050when appropriate\051 and resource usage information. A) 72 89.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(complete list of accounting attributes is de\336ned in the accounting section below) 72 77.33 T
+(.) 389.93 77.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "2" 2
+%%Page: "3" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 3 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(2.4) 97.2 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Session) 122.4 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The concept of a session is used throughout this document. A T) 90 697.33 T
+(ACACS+ session is a single authentication) 343.62 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (sequence, a single authorization exchange, or a stream of consecutive accounting messages. The session is important) 72 685.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(because the session id is used as a part of the encryption, and is used by both ends to separate packets belonging to) 72 673.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(dif) 72 661.33 T
+(ferent sessions. Multiple sessions may be supported simultaneously on a single TCP connection if both the server) 82.93 661.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (and client support this. The session is an administrative concept that is maintained between the T) 72 649.33 P
+-0.12 (ACACS+ client and) 457.21 649.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(server) 72 637.33 T
+(. It does not necessarily correspond to a given user or user action.) 95.88 637.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "3" 3
+%%Page: "4" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 4 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(3.0) 72 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The T) 97.2 712 T
+(ACACS+ packet header) 127.32 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+-0.3 (All T) 72 694.33 P
+-0.3 (ACACS+ packets always begins with the following 12 byte header) 92.29 694.33 P
+-0.3 (. The header is always cleartext and describes) 357.17 694.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the remainder of the packet:) 72 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |major  | minor  |                |                |                |) 72 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |version| version|      type      |     seq_no     |   encryption   |) 72 602.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 586.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |                                                                   |) 72 570.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |                            session_id                             |) 72 554.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 538.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |                                                                   |) 72 522.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |                              length                               |) 72 506.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 490.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(major_version) 122.4 458.33 T
+0 F
+( - This is the major T) 200.4 458.33 T
+(ACACS+ version number) 284.04 458.33 T
+(. It is always 0xc.) 387.46 458.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(minor_version) 122.4 443.33 T
+0 F
+( - This is the minor T) 200.4 443.33 T
+(ACACS+ version number) 284.6 443.33 T
+(. It is currently set to 0x0. The minor) 388.02 443.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(version number is intended to allow revisions to the T) 144 431.33 T
+(ACACS+ protocol while maintaining back-) 359.02 431.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(wards compatibility) 144 419.33 T
+(.) 223.07 419.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(type) 122.4 404.33 T
+0 F
+( - This is the packet type. Legal values are:) 146.4 404.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN) 144 389.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 389.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050Authentication\051) 432 389.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHOR) 144 373.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 373.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050Authorization\051) 432 373.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_ACCT) 144 357.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x03) 342 357.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050Accounting\051) 432 357.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.61 (seq_no) 122.4 341.33 P
+0 F
+-0.25 ( - This is the sequence number of the current packet for the current session. The \336rst T) 158.4 341.33 P
+-0.25 (ACACS+) 498.77 341.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0 (packet in a session should have the sequence number 1 and each subsequent packet will increment) 144 329.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.35 (the sequence number by one. Thus clients only send packets containing odd sequence numbers, and) 144 317.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 144 305.33 T
+(ACACS+ servers only send packets containing even sequence numbers.) 149.31 305.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(encryption) 122.4 290.33 T
+0 F
+( - This \337ag describes the encryption mechanism that is used for the body of the) 182.4 290.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 144 278.33 T
+(ACACS+ packet \050the entire portion after the header\051. The encryption methods are described) 149.31 278.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(below) 144 266.33 T
+(. Legal values are:) 167.79 266.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_ENCRYPTED) 144 251.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x00) 342 251.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_CLEAR) 144 235.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 235.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.9 (session_id) 122.4 219.33 P
+0 F
+-0.38 ( - The Id for this T) 182.4 219.33 P
+-0.38 (ACACS+ session. The session id should be randomly chosen. This \336eld) 253.77 219.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.12 (does not change for the duration of the T) 144 207.33 P
+-0.12 (ACACS+ session. \050If this value is not random, it will com-) 305.55 207.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(promise the protocol\325) 144 195.33 T
+(s security) 229.55 195.33 T
+(.\051) 266.95 195.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.54 (length) 122.4 180.33 P
+0 F
+-0.22 ( - The total length of the T) 158.4 180.33 P
+-0.22 (ACACS+ packet body \050not including the header\051. This value is in net-) 261.85 180.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(work byte order) 144 168.33 T
+(.) 207.32 168.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "4" 4
+%%Page: "5" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 5 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(4.0) 72 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The T) 97.2 712 T
+(ACACS+ packet body) 127.32 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(The T) 90 694.33 T
+(ACACS+ body types are de\336ned in the above header) 113.36 694.33 T
+(. The remainder of this document will address the) 325.08 694.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(contents of the dif) 72 682.33 T
+(ferent T) 144.31 682.33 T
+(ACACS+ bodies. The following general rules apply to all T) 175.44 682.33 T
+(ACACS+ body types:) 414.15 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 97.2 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The entire body is protected by the encryption mechanism indicated in the header) 108 666.33 T
+(.) 433.5 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 97.2 654.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Any variable length data \336elds which are unused MUST have a length value equal to zero.) 108 654.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 97.2 642.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Unused \336xed length \336elds SHOULD have values of zero.) 108 642.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 97.2 630.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(All data and message \336elds in a T) 108 630.33 T
+(ACACS+ packet MUST not be null terminated.) 242.46 630.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\245) 97.2 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(All length values are unsigned and in network byte order) 108 618.33 T
+(.) 334.91 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(4.1) 97.2 590.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Body Encryption) 122.4 590.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.35 (The body of a T) 90 574.33 P
+-0.35 (ACACS+ packets may be encrypted. The following sections describe the encryption mechanisms) 152.23 574.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(that are supported. Only one encryption mechanism SHOULD be used for a single session.) 72 562.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (When the encryption mechanism relies on a secret key) 90 546.33 P
+-0.05 (, it is refering to a shared secret value that is known to the) 307.19 546.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(client and the server) 72 534.33 T
+(. This document does not discuss the management and storage of those keys. It is an) 152.26 534.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (implementation detail of the server) 72 522.33 P
+-0.1 (, as to whether it will maintain a single key) 211.16 522.33 P
+-0.1 (, or a single key per client. For security) 381.79 522.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (reasons, the latter option should be available, but it is a site dependant decision as to whether the use of separate keys) 72 510.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(is appropriate.) 72 498.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(4.1.1) 122.4 482.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( TAC_PLUS_ENCRYPTED) 152.4 482.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The packet body is encrypted by XOR-ing it byte-wise with a pseudo random pad.) 90 468.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(ENCRYPTED {data} == data ^ pseudo_pad) 144 436.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.3 (The pad is generated by concatenating a series of MD5 hashes \050each 16 bytes long\051 and truncating it to the length) 90 404.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of the input data.) 72 392.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(pseudo_pad = {MD5_1 [,MD5_2 [ ... ,MD5_n]]} truncated to len\050data\051) 144 360.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.11 (The \336rst MD5 hash is generated by concatenating the) 90 328.33 P
+2 F
+-0.27 (session_id) 305.33 328.33 P
+0 F
+-0.11 (, the secret key) 365.33 328.33 P
+-0.11 (, the version number and the) 424.31 328.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(sequence number and then running MD5 over that stream. All of the input values are available in the packet header) 72 316.33 T
+(,) 532.61 316.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(except for the secret key which is a shared secret between the T) 72 304.33 T
+(ACACS+ client and server) 325.56 304.33 T
+(. The session id is used in) 432.58 304.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the byte order in which it appears in the T) 72 292.33 T
+(ACACS+ header) 238.67 292.33 T
+(. \050i.e. In network byte order) 306.25 292.33 T
+(, not host byte order\051.) 415.82 292.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Subsequent hashes are generated by using the same input stream, but concatenating the previous hash value at) 90 276.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the end.) 72 264.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(MD5_1 = MD5{session_id, key, version, seq #}) 144 232.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(MD5_2 = MD5{session_id, key, version, seq #, MD5_1}) 144 216.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(...) 144 200.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(MD5_n = MD5{session_id, key, version, seq #, MD5_n-1}) 144 184.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+3 F
+(4.1.2) 122.4 152.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( TAC_PLUS_CLEAR) 152.4 152.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.19 (The entire packet body is in cleartext. Encryption and decryption is a null operation. This method should only be) 90 138.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (used for debugging. It does not provide data protection or authentication and is highly succeptible to packet spoo\336ng.) 72 126.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "5" 5
+%%Page: "6" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 6 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(5.0) 72 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Body types) 97.2 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(All further discussions of T) 90 694.33 T
+(ACACS+ packet bodies assumes that any encryption/decryption has already been) 199.19 694.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(performed. W) 72 682.33 T
+(e are only concerned with the cleartext data.) 127.29 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(There are several constant \336elds in many of the following bodies. A few merit mention in global scope. The) 90 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(user) 72 654.33 T
+0 F
+( is the username or user id that is authenticated or being authenticated. The) 96 654.33 T
+2 F
+(port) 397.89 654.33 T
+0 F
+( is an ascii description of the) 421.89 654.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(port on which the user is connected. The remote address is a \322best ef) 72 642.33 T
+(fort\323 description of the remote location from) 346.2 642.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(which the user has connected to the client. In many cases, the remote address will not be available or will be) 72 630.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(unreliable at best, but it may be useful when included. The) 72 618.33 T
+2 F
+(user_msg) 308.91 618.33 T
+0 F
+( is always the ascii input from the user) 356.91 618.33 T
+(. The) 510.23 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(server_msg) 72 606.33 T
+0 F
+( is always used to hold a message that is intended to be presented to the user) 132 606.33 T
+(. In some contexts it may) 436.41 606.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(be optional as to whether to actually present it. The) 72 594.33 T
+2 F
+(data) 279.47 594.33 T
+0 F
+( \336eld has several uses and is not used in all packets. In) 303.47 594.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (messages from the client, it can contains status information in an ascii message. In authentication messages from the) 72 582.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(server that do not have) 72 570.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_ERROR) 165.59 570.33 T
+0 F
+( status, the) 333.59 570.33 T
+2 F
+(data) 378.59 570.33 T
+0 F
+( \336eld can hold authentication) 402.59 570.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.13 (information. In all types of packets from the server when status is) 72 558.33 P
+2 F
+-0.31 (TAC_PLUS_AUTHEN_STATUS_ERROR) 335.15 558.33 P
+0 F
+-0.13 (, it holds) 503.15 558.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(a message suitable for display on an administrative console or log.) 72 546.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.1) 97.2 530.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Authentication) 122.4 530.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 90 514.33 T
+(ACACS+ authentication has three packet types:) 95.31 514.33 T
+2 F
+(START) 289.26 514.33 T
+0 F
+(,) 318.52 514.33 T
+2 F
+(CONTINUE) 323.52 514.33 T
+0 F
+( and) 371.52 514.33 T
+2 F
+(REPLY) 390.96 514.33 T
+0 F
+(.) 419.67 514.33 T
+2 F
+(START) 424.67 514.33 T
+0 F
+( and) 454.67 514.33 T
+2 F
+(CONTINUE) 474.11 514.33 T
+0 F
+( are) 522.11 514.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(always sent by the client and) 72 502.33 T
+2 F
+(REPLY) 189.76 502.33 T
+0 F
+( is always sent by the server) 219.76 502.33 T
+(. Authentication begins with the client sending a) 331.41 502.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(START) 72 490.33 T
+0 F
+( message to the server) 102 490.33 T
+(. The) 189.76 490.33 T
+2 F
+(START) 212.81 490.33 T
+0 F
+( message describes the type of authentication to be performed, and may) 242.81 490.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(contain the username. The server sends a) 72 478.33 T
+2 F
+(REPLY) 238.62 478.33 T
+0 F
+(. The) 267.33 478.33 T
+2 F
+(REPLY) 290.38 478.33 T
+0 F
+( message indicates whether the authentication is) 320.38 478.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\336nished, or whether it should continue. If the) 72 466.33 T
+2 F
+(REPLY) 254.76 466.33 T
+0 F
+( indicates that authentication should continue, then it will also) 284.76 466.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(indicate what new information is requested. The client will get that information and return it in a) 72 454.33 T
+2 F
+(CONTINUE) 460.84 454.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(message. The server must always send a) 72 442.33 T
+2 F
+(REPLY) 235.85 442.33 T
+0 F
+( to both the) 265.85 442.33 T
+2 F
+(START) 313.63 442.33 T
+0 F
+( and the) 343.63 442.33 T
+2 F
+(CONTINUE) 377.79 442.33 T
+0 F
+( messages, with the only) 425.79 442.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(exception being if the client indicates an abort in the) 72 430.33 T
+2 F
+(CONTINUE) 284.19 430.33 T
+0 F
+(, in which case the session is immediately aborted.) 332.19 430.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(There are zero or more pairs of the client sending a) 72 418.33 T
+2 F
+(CONTINUE) 278.88 418.33 T
+0 F
+( and the server sending a) 326.88 418.33 T
+2 F
+(REPLY) 428.52 418.33 T
+0 F
+(.) 457.23 418.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The T) 90 402.33 T
+(ACACS+ client can send two types of authentication packets to the server) 113.36 402.33 T
+(, a) 409.39 402.33 T
+2 F
+(START) 421.33 402.33 T
+0 F
+( and a) 451.33 402.33 T
+2 F
+(CONTINUE) 477.71 402.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.28 (packet. The) 72 390.33 P
+2 F
+-0.68 (START) 120.58 390.33 P
+0 F
+-0.28 ( body is only ever sent as the \336rst message in a T) 150.58 390.33 P
+-0.28 (ACACS+ authentication session, or as the packet) 342.47 390.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.21 (immediately following a restart. \050A restart may be requested by the server) 72 378.33 P
+-0.21 (.\051 All other client messages are) 364.62 378.33 P
+2 F
+-0.51 (CONTINUE) 489.71 378.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(messages.) 72 366.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.1.1) 122.4 350.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The authentication) 151.2 350.33 T
+3 F
+(START) 234.54 350.33 T
+1 F
+( packet body) 264.54 350.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 320.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 304.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    action      |    priv_lvl    |  authen_type   |     service    |) 72 288.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 272.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    user len    |    port len    |  rem addr len  |  reserved len  |) 72 256.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 240.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    user ...) 72 224.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 208.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    port ...) 72 192.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 176.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    rem addr ...) 72 160.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 144.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    reserved ...) 72 128.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 112.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(action) 122.4 80.33 T
+0 F
+( - Describes the authentication action to be performed. Legal values are:) 158.4 80.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "6" 6
+%%Page: "7" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 7 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_LOGIN) 144 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_CHPASS) 144 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SENDPASS) 144 681.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x03) 342 681.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.56 (priv_lvl) 122.4 665.33 P
+0 F
+-0.23 ( - Indicates the privilege level that the user is authenticating as. All values, not speci\336ed here) 170.4 665.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(are client speci\336ed. Pre-de\336ned values are:) 144 653.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_PRIV_LVL_MAX) 144 638.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x0f) 342 638.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_PRIV_LVL_ROOT) 144 622.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x0f) 342 622.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_PRIV_LVL_USER) 144 606.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 606.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_PRIV_LVL_MIN) 144 590.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x00) 342 590.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "7" 7
+%%Page: "8" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 8 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(authen_type) 122.4 713.33 T
+0 F
+( - The type of authentication that is being performed. Legal values are:) 188.4 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_TYPE_ASCII) 144 698.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 698.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_TYPE_PAP) 144 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_TYPE_CHAP) 144 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x03) 342 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_TYPE_ARAP) 144 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x04) 342 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(service) 122.4 634.33 T
+0 F
+( - This is the service that is requesting the authentication. Legal values are:) 164.4 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_SVC_NONE) 144 619.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x00) 342 619.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_LOGIN) 144 603.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 603.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_ENABLE) 144 587.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 587.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_PPP) 144 571.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x03) 342 571.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_ARAP) 144 555.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x04) 342 555.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_PT) 144 539.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x05) 342 539.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_RCMD) 144 523.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x06) 342 523.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_SVC_X25) 144 507.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x07) 342 507.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(user) 122.4 491.33 T
+0 F
+( - This is the username. It is optional in this packet.) 146.4 491.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(port) 122.4 476.33 T
+0 F
+( - This is the ASCII name of the client port on which the authentication is taking place. The value) 146.4 476.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(of this \336eld is client speci\336ed. \050For example a cisco will use \322tty10\323 for the tenth tty line and) 144 464.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322Async10\323 for the tenth async interface.\051) 144 452.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.51 (rem_addr) 122.4 437.33 P
+0 F
+-0.21 ( - This is an ASCII string that describes the user) 170.4 437.33 P
+-0.21 (\325) 360.86 437.33 P
+-0.21 (s remote location. This \336eld is option \050since) 363.64 437.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.05 (the information may not be available\051. This is intended to hold a network address if the user is con-) 144 425.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (nected over a network, a caller ID is the user is connected via ISDN or a POTS, or any other remote) 144 413.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(location information that is available. This \336eld value is client speci\336ed.) 144 401.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(reserved) 122.4 386.33 T
+0 F
+( - This \336eld is unused at this time.) 170.4 386.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.1.2) 122.4 356.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The authentication) 151.2 356.33 T
+3 F
+(CONTINUE) 234.54 356.33 T
+1 F
+( packet body) 282.54 356.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 326.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 310.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |          user_msg len           |            data len             |) 72 294.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 278.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |     f) 72 262.33 T
+(lags      |  user_msg ...) 144 262.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 246.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    data ...) 72 230.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+) 72 214.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(user_msg) 122.4 182.33 T
+0 F
+( - This \336eld is the string that the user entered in response to the server_msg \050see below\051.) 170.4 182.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(data) 122.4 167.33 T
+0 F
+( - This \336eld carries information from the client itself \050not from the user\051.) 146.4 167.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(f) 122.4 152.33 T
+(lags) 128.4 152.33 T
+0 F
+( - This holds the bitmapped \337ags that modify the action to be taken. The following values are) 152.4 152.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(de\336ned:) 144 140.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_CONTINUE_FLAG_ABORT) 144 125.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 125.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "8" 8
+%%Page: "9" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 9 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.1.3) 122.4 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The authentication) 151.2 713.33 T
+3 F
+(REPLY) 234.54 713.33 T
+1 F
+( packet body) 264.54 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The T) 72 699.33 T
+(ACACS+ server sends only one type of authentication packet \050the) 95.36 699.33 T
+2 F
+(REPLY) 362.07 699.33 T
+0 F
+( packet\051 to the client. The) 392.07 699.33 T
+2 F
+(REPLY) 496.77 699.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(packet body looks like this:) 72 687.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 655.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 639.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |     status     |      f) 72 623.33 T
+(lags     |        server_msg len           |) 252 623.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 607.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |           data len              |        server_msg ...) 72 591.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 575.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |           data ...) 72 559.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+) 72 543.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(status) 122.4 511.33 T
+0 F
+( - This is the current status of the authentication. Legal values are:) 158.4 511.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_PASS) 144 496.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 496.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_FAIL) 144 480.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 480.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_GETDATA) 144 464.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x03) 342 464.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_GETUSER) 144 448.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x04) 342 448.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_GETPASS) 144 432.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x05) 342 432.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_RESTART) 144 416.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x06) 342 416.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_ERROR) 144 400.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x07) 342 400.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_STATUS_FOLLOW) 144 384.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x21) 342 384.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(f) 122.4 368.33 T
+(lags) 128.4 368.33 T
+0 F
+( - This holds the bitmapped \337ags that modify the action to be taken. The following values are) 152.4 368.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(de\336ned:) 144 356.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_REPLY_FLAG_NOECHO) 144 341.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 341.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(server_msg) 122.4 325.33 T
+0 F
+( - This is the message to be displayed to the user) 182.4 325.33 T
+(. This \336eld is optional. If it exists, it) 375.44 325.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(should always be provided to the user if Status equals) 144 313.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_PASS) 361.2 313.33 T
+0 F
+(,) 523.2 313.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_FAIL) 144 301.33 T
+0 F
+(,) 306 301.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_GETDATA) 311 301.33 T
+0 F
+(,) 491 301.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.05 (TAC_PLUS_AUTHEN_STATUS_GETUSER) 144 289.33 P
+0 F
+-0.02 ( or) 324 289.33 P
+2 F
+-0.05 (TAC_PLUS_AUTHEN_STATUS_GETPASS) 337.29 289.33 P
+0 F
+-0.02 (. It is) 517.29 289.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(up to the client if it wants to provide the Server_msg when Status equals) 144 277.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_RESTART) 144 265.33 T
+0 F
+(,) 323.26 265.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_ERROR) 328.26 265.33 T
+0 F
+( or) 496.26 265.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_FOLLOW) 144 253.33 T
+0 F
+(.) 317.08 253.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(data) 122.4 238.33 T
+0 F
+( - This \336eld holds data that is a part of the authentication exchange and is intended for the client,) 146.4 238.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(not the user) 144 226.33 T
+(. Speci\336c uses of this \336eld are described below) 190.11 226.33 T
+(.) 376.93 226.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If) 90 195.33 T
+2 F
+(status) 99.16 195.33 T
+0 F
+( equals) 135.16 195.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_PASS) 165.71 195.33 T
+0 F
+(,) 327.71 195.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_FAIL) 332.71 195.33 T
+0 F
+(,) 494.71 195.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_ERROR) 72 183.33 T
+0 F
+( or) 240 183.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_FOLLOW) 253.33 183.33 T
+0 F
+(, then the authentication) 426.41 183.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.31 (session is terminated and the TCP stream may be closed. If) 72 171.33 P
+2 F
+-0.76 (status) 307.39 171.33 P
+0 F
+-0.31 ( equals) 343.39 171.33 P
+2 F
+-0.76 (TAC_PLUS_AUTHEN_STATUS_PASS) 373.31 171.33 P
+0 F
+-0.31 (,) 535.31 171.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.25 (the authentication has succeed. If) 72 159.33 P
+2 F
+-0.59 (status) 206.28 159.33 P
+0 F
+-0.25 ( equals) 242.28 159.33 P
+2 F
+-0.59 (TAC_PLUS_AUTHEN_STATUS_FAIL) 272.34 159.33 P
+0 F
+-0.25 (, the authentication failed.) 434.34 159.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.19 (If) 72 147.33 P
+2 F
+-0.46 (status) 80.97 147.33 P
+0 F
+-0.19 ( equals) 116.97 147.33 P
+2 F
+-0.46 (TAC_PLUS_AUTHEN_STATUS_ERROR) 147.13 147.33 P
+0 F
+-0.19 (, then an unknown error occurred and the authentication) 315.13 147.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(does not succeed, but may not necessarily fail, depending on the client implementation. If) 72 135.33 T
+2 F
+(status) 433.34 135.33 T
+0 F
+( equals) 469.34 135.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_ERROR) 72 123.33 T
+0 F
+(,) 240 123.33 T
+2 F
+(server_msg) 245 123.33 T
+0 F
+( MA) 305 123.33 T
+(Y contain a message for the user and the) 322.69 123.33 T
+2 F
+(data) 487.37 123.33 T
+0 F
+( \336eld) 511.37 123.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(MA) 72 111.33 T
+(Y contain a message for an administrative console or log. Displaying these messages is optional. If) 87.19 111.33 T
+2 F
+(status) 485.47 111.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.06 (equals) 72 99.33 P
+2 F
+-0.14 (TAC_PLUS_AUTHEN_STATUS_FOLLOW) 99.99 99.33 P
+0 F
+-0.06 (, then the client should contact another T) 273.07 99.33 P
+-0.06 (ACACS+ server and start) 435.17 99.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.29 (the authentication over again, but the authentication does not fail.) 72 87.33 P
+2 F
+-0.69 (TAC_PLUS_AUTHEN_STATUS_FOLLOW) 333.52 87.33 P
+0 F
+-0.29 ( will, in) 507.52 87.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the future, allow for another T) 72 75.33 T
+(ACACS+ server to be identi\336ed in the) 192.28 75.33 T
+2 F
+(data) 348.19 75.33 T
+0 F
+( \336eld of the packet.) 372.19 75.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "9" 9
+%%Page: "10" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 10 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If) 90 713.33 T
+2 F
+(status) 99.16 713.33 T
+0 F
+( equals) 135.16 713.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_GETDATA) 165.71 713.33 T
+0 F
+(,) 345.71 713.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_GETUSER) 350.71 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(or) 72 701.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_GETPASS) 82.83 701.33 T
+0 F
+(, then the authentication continues and the client must prompt the) 262.83 701.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(user with the) 72 689.33 T
+2 F
+(server_msg) 126.16 689.33 T
+0 F
+( for more information, and then send a) 186.16 689.33 T
+2 F
+(CONTINUE) 342.52 689.33 T
+0 F
+( packet.) 390.52 689.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_GETDATA) 72 677.33 T
+0 F
+( is the generic form. All three cause the same action to be performed,) 252 677.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.1 (but in the case of) 72 665.33 P
+2 F
+-0.25 (TAC_PLUS_AUTHEN_STATUS_GETUSER) 142.29 665.33 P
+0 F
+-0.1 (, the client can know that the information that the user) 322.3 665.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(responds with is a username, and for) 72 653.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_GETPASS) 220.86 653.33 T
+0 F
+(, the user response is a password.) 400.86 653.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If the) 90 637.33 T
+2 F
+(TAC_PLUS_REPLY_FLAG_NOECHO) 113.88 637.33 T
+0 F
+( \337ag is set, then the user response should not be echoed as it is) 269.88 637.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(entered.) 72 625.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If the Status equals) 90 609.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_RESTART) 168.88 609.33 T
+0 F
+(, then the authentication sequence should be) 348.14 609.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(restarted with a new) 72 597.33 T
+2 F
+(START) 155.31 597.33 T
+0 F
+( packet from the client. This packet indicates that the current) 185.31 597.33 T
+2 F
+(authen_type) 430.26 597.33 T
+0 F
+( value \050as) 496.26 597.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(speci\336ed in the) 72 585.33 T
+2 F
+(START) 135.05 585.33 T
+0 F
+( packet\051 is not acceptable for this session, but that others may be. The) 165.05 585.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_RESTART) 72 573.33 T
+0 F
+( packet may contain a list of valid) 252 573.33 T
+2 F
+(authen_type) 389.76 573.33 T
+0 F
+( values in the) 455.76 573.33 T
+2 F
+(data) 511.31 573.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(portion of the packet. The) 72 561.33 T
+2 F
+(authen_type) 178.09 561.33 T
+0 F
+( values are a single byte in length so the) 244.09 561.33 T
+2 F
+(data_len) 406.29 561.33 T
+0 F
+( value indicates the) 454.29 561.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(number of) 72 549.33 T
+2 F
+(authen_type) 115.88 549.33 T
+0 F
+( values included. This packet is only currently intended for PPP authentication when) 181.88 549.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(multiple authentication mechanisms are available and can be negotiated between the client and the remote peer) 72 537.33 T
+(.) 515.52 537.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Currently PPP supports P) 72 525.33 T
+(AP and CHAP) 173.04 525.33 T
+(, but more are proposed. If a client chooses not to accept) 230.82 525.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_RESTART) 72 513.33 T
+0 F
+( packets, then it should be TREA) 252 513.33 T
+(TED as a) 383.38 513.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_FAIL) 72 501.33 T
+0 F
+( packet.) 234 501.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The client may prematurely terminate an authentication session by setting the) 90 485.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.22 (TAC_PLUS_CONTINUE_FLAG_ABORT) 72 473.33 P
+0 F
+-0.09 ( \337ag in the) 240 473.33 P
+2 F
+-0.22 (CONTINUE) 284.64 473.33 P
+0 F
+-0.09 ( message. If this \337ag is set, the) 332.64 473.33 P
+2 F
+-0.22 (data) 456.92 473.33 P
+0 F
+-0.09 ( portion of the) 480.92 473.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(message may contain an ascii message explaining the reason for the abort. The session is terminated and no) 72 461.33 T
+2 F
+(REPLY) 504.98 461.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(message is sent. The TCP connection may be closed.) 72 449.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(T) 90 433.33 T
+(ACACS+ authentication can support three actions, speci\336ed in the) 95.31 433.33 T
+2 F
+(START) 363.7 433.33 T
+0 F
+( message. The actions are:) 393.7 433.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_LOGIN) 72 421.33 T
+0 F
+(,) 198 421.33 T
+2 F
+(TAC_PLUS_AUTHEN_CHPASS) 203 421.33 T
+0 F
+( and) 335 421.33 T
+2 F
+(TAC_PLUS_AUTHEN_SENDPASS) 354.44 421.33 T
+0 F
+(.) 498.44 421.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_LOGIN) 90 405.33 T
+0 F
+( - is a standard login process where the server asks questions that must be) 216 405.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(answered by the client \050who will typically pass them onto the user\051.) 72 393.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_CHPASS) 90 377.33 T
+0 F
+( - is a password change, and this works similarly to a) 222 377.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_LOGIN) 72 365.33 T
+0 F
+( in that the server will simply ask whatever questions it requires in order to make the) 198 365.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(password change.) 72 353.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+-0.05 (TAC_PLUS_AUTHEN_SENDPASS) 90 337.33 P
+0 F
+-0.02 ( - is sort of the opposite of a) 234 337.33 P
+2 F
+-0.05 (TAC_PLUS_AUTHEN_LOGIN) 348.54 337.33 P
+0 F
+-0.02 (. In some cases,) 474.54 337.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the client needs to know the user) 72 325.33 T
+(\325) 203.46 325.33 T
+(s cleartext password or secret in order to perform the authentication. Examples of) 206.24 325.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(this are CHAP and ARAP) 72 313.33 T
+(, where the cleartext password is required to perform the challenge/response portion of the) 175.33 313.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(authentication exchange. Another example is the outbound authentication done in PPP when a remote end asks the) 72 301.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(local peer to authenticate itself. The) 72 289.33 T
+2 F
+(TAC_PLUS_AUTHEN_SENDPASS) 217.8 289.33 T
+0 F
+( exchange typically consists of a) 361.8 289.33 T
+2 F
+(START) 494 289.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(message that includes the username, followed by a) 72 277.33 T
+2 F
+(REPLY) 277.24 277.33 T
+0 F
+( with) 307.24 277.33 T
+2 F
+(status) 330.02 277.33 T
+0 F
+( equal to either) 366.02 277.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_STATUS_PASS) 72 265.33 T
+0 F
+( or) 234 265.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_FAIL) 247.33 265.33 T
+0 F
+(. However the exchange can be) 409.33 265.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(longer and more complex. When the) 72 253.33 T
+2 F
+(status) 220.58 253.33 T
+0 F
+( is) 256.58 253.33 T
+2 F
+(TAC_PLUS_AUTHEN_STATUS_PASS) 268.25 253.33 T
+0 F
+(, then the requested) 430.25 253.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(password will be in the) 72 241.33 T
+2 F
+(data) 167.27 241.33 T
+0 F
+( \336eld of the) 191.27 241.33 T
+2 F
+(REPLY) 239.6 241.33 T
+0 F
+(.) 268.31 241.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "10" 10
+%%Page: "11" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 1) 288 44.33 T
+(1 of 19) 314.57 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.2) 97.2 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Authorization) 122.4 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(T) 90 697.33 T
+(ACACS+ authorization is an extensible way of providing remote authorization services. The authorization) 95.31 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.22 (request messages contain a \336xed set of \336elds that describe the authenticity of the user or process, and a variable set of) 72 685.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ar) 72 673.33 T
+(guments that describes the services and options for which authorization is requested. The response contains a) 79.59 673.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.16 (variable set of response ar) 72 661.33 P
+-0.16 (guments which can restrict or modify the clients actions. The ar) 175.61 661.33 P
+-0.16 (guments are attribute-value) 428.55 661.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(pairs. The ar) 72 649.33 T
+(guments in both a request and a response can be speci\336ed as either mandatory or optional. An optional) 122.08 649.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(ar) 72 637.33 T
+(gument is one that may or may not be used, modi\336ed or even understood. A mandatory ar) 79.59 637.33 T
+(gument must be) 438.81 637.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.08 (understood and used. This allows for extending the attribute list while providing secure backwards compatibility) 72 625.33 P
+-0.08 (. An) 520.44 625.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(authorization session is de\336ned as a single pair of messages, a request followed by a response.) 72 613.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.2.1) 122.4 581.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The authorization) 151.2 581.33 T
+3 F
+(REQUEST) 230.65 581.33 T
+1 F
+( packet body) 272.65 581.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 551.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 535.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |  authen method |    priv_lvl    |  authen type   | authen service |) 72 519.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 503.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    user len    |    port len    |  rem addr len  |    arg cnt     |) 72 487.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 471.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 1 len    |   arg 2 len    |      ...       |   arg N len    |) 72 455.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 439.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   user ...) 72 423.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 407.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   port ...) 72 391.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 375.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   rem addr ...) 72 359.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 343.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 1 ...) 72 327.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 311.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 2 ...) 72 295.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 279.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   ...) 72 263.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 247.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg N ...) 72 231.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 215.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "11" 11
+%%Page: "12" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 12 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(authen_method - This indicates the authentication method used to acquire the user information.) 122.4 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_METH_NOT_SET) 144 698.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x00) 342 698.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_NONE) 144 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_KRB5) 144 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_LINE) 144 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x03) 342 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_ENABLE) 144 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x04) 342 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_LOCAL) 144 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x05) 342 618.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_TACACSPLUS) 144 602.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x06) 342 602.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHEN_METH_RCMD) 144 586.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x20) 342 586.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(priv_lvl) 122.4 570.33 T
+0 F
+( - This \336eld matches the priv_lvl \336eld in the authentication section above. It indicates the) 170.4 570.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(users current privilege level.) 144 558.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(authen_type) 122.4 543.33 T
+0 F
+( - This \336eld matches the authen type \336eld in the authentication section above. It indi-) 188.4 543.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(cates the type of authentication that was performed.) 144 531.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(authen_service) 122.4 516.33 T
+0 F
+( - This \336eld matches the service \336eld in the authentication section above. It indi-) 206.4 516.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(cates the service through which the user authenticated.) 144 504.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(user) 122.4 489.33 T
+0 F
+( - This \336eld contains the user) 146.4 489.33 T
+(\325) 262.87 489.33 T
+(s account name.) 265.65 489.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(port) 122.4 474.33 T
+0 F
+( - This \336eld matches the port \336eld in the authentication section above.) 146.4 474.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(rem_addr) 122.4 459.33 T
+0 F
+( - This \336eld matches the remote addr \336eld in the authentication section above.) 170.4 459.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(arg_cnt) 122.4 444.33 T
+0 F
+( - The number of authorization ar) 164.4 444.33 T
+(guments to follow) 297.52 444.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(arg) 122.4 429.33 T
+0 F
+( - An attribute-value pair that describes the command to be performed. \050see below\051) 140.4 429.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The authorization ar) 90 398.33 T
+(guments in both the) 170.91 398.33 T
+2 F
+(REQUEST) 252.58 398.33 T
+0 F
+( and the) 294.58 398.33 T
+2 F
+(RESPONSE) 328.74 398.33 T
+0 F
+( are attribute-value pairs. The attribute) 376.74 398.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and the value are in a single ascii string and are separated by either a \322) 72 386.33 T
+2 F
+(=) 353.31 386.33 T
+0 F
+(\323 \050) 359.31 386.33 T
+2 F
+(0X3D) 369.58 386.33 T
+0 F
+(\051 or a \322) 393.58 386.33 T
+2 F
+(*) 421.62 386.33 T
+0 F
+(\323 \050) 427.62 386.33 T
+2 F
+(0X2A) 437.89 386.33 T
+0 F
+(\051. The equals sign) 461.89 386.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(indicates a mandatory ar) 72 374.33 T
+(gument. The asterisk indicates an optional one. Optional ar) 169.85 374.33 T
+(guments are ones that may be) 405.75 374.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(disregarded by either client or server) 72 362.33 T
+(. Mandatory ar) 218.35 362.33 T
+(guments require that the receiving side understands the attribute) 277.32 362.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and will act on it. If the client receives a mandatory ar) 72 350.33 T
+(gument that it cannot oblige or does not understand, it MUST) 287.88 350.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(consider the authorization to have failed. It is legal to send an attribute-value pair with a NULL \050zero length\051 value.) 72 338.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The attribute-value strings are not NULL terminated, rather their length value indicates their end. The maximum) 72 326.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(length of an attribute-value string is 256 characters. The following attributes are de\336ned:) 72 314.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(T) 229.39 291 T
+(able 1: Attribute-value Pairs) 236.29 291 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A) 91.1 265 T
+(TTRIBUTE) 98.88 265 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(V) 333.44 265 T
+(ALUE\050s\051) 340.56 265 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(service) 78 241 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a primary service. Specifying a service attribute indicates that this is an) 186 241 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(authorization request for starting that service. Currently known values) 186 227 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(are slip, ppp, arap, shell and system. This attribute MUST always be) 186 213 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(included.) 186 199 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(protocol) 78 177 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a network protocol that is a subset of a service. This attribute must be) 186 177 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(speci\336ed when the service is PPP to indicate that a protocol is being) 186 163 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.02 (brought up as a secondary service. An example would be any PPP NCP) 186 149 P
+-0.02 (.) 528.02 149 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Currently known values are \322lcp\323, \322ip\323, \322ipx\323, \322atalk\323, \322vines\323 and) 186 135 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\322unknown\323.) 186 121 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 280.75 72 113.25 2 L
+V
+0.5 H
+0 Z
+N
+180 281.25 180 112.75 2 L
+V
+N
+540 280.75 540 113.25 2 L
+V
+N
+71.75 281 540.25 281 2 L
+V
+N
+72.25 256.25 539.75 256.25 2 L
+V
+N
+72.25 253.75 539.75 253.75 2 L
+V
+N
+71.75 191 540.25 191 2 L
+V
+N
+71.75 113 540.25 113 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "12" 12
+%%Page: "13" 13
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 13 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 12 Q
+(cmd) 78 662 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a shell \050exec\051 command. This indicates the command name for a shell) 186 662 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(command that is to be run. This attribute must be speci\336ed if service) 186 648 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(equals \322shell\323. A NULL value indicates that the shell itself is being) 186 634 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(referred to.) 186 620 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(cmd-arg) 78 598 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(an ar) 186 598 T
+(gument to a shell \050exec\051 command. This indicates an ar) 209.44 598 T
+(gument for) 474.5 598 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the shell command that is to be run. Multiple cmd-ar) 186 584 T
+(g attributes may be) 438.43 584 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(speci\336ed, and they are order dependent.) 186 570 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(acl) 78 548 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ascii number representing a connection access list. Used only when) 186 548 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(service=shell) 186 534 T
+0 F
+( and) 279.6 534 T
+2 F
+(cmd=NULL) 302.93 534 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(inacl) 78 512 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ascii number for an interface input access list.) 186 512 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(outacl) 78 490 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(ascii number for an interface output access list.) 186 490 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(zonelist) 78 468 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(A numeric zonelist value. \050Applicable to Appletalk only\051.) 186 468 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(addr) 78 446 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(a network address) 186 446 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(routing) 78 424 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Boolean. Speci\336es whether routing information is to be propogated to,) 186 424 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and accepted from this interface.) 186 410 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(route) 78 388 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.04 (Indicates a route that is to be applied to this interface. V) 186 388 P
+-0.04 (alues must be of) 452.84 388 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the form \322<dst_address> <mask> <routing_addr>\323. If routing_addr is) 186 374 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(missing, the current interface will be used.) 186 360 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(timeout) 78 338 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(an absolute timer for the connection \050in minutes\051.) 186 338 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(idletime) 78 316 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(an idle-timeout for the connection \050in minutes\051.) 186 316 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(autocmd) 78 294 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(an auto-command to run. Used only when) 186 294 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(service=shell) 186 280 T
+0 F
+( and) 279.6 280 T
+2 F
+(cmd=NULL) 302.93 280 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(noescape) 78 258 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.02 (Boolean. Prevents user from using an escape character) 186 258 P
+-0.02 (. Used only when) 447.1 258 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(service=shell) 186 244 T
+0 F
+( and) 279.6 244 T
+2 F
+(cmd=NULL) 302.93 244 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(nohangup) 78 222 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.45 (Boolean. Do no disconnect after after an automatic command. Used only) 186 222 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(when) 186 208 T
+2 F
+(service=shell) 214.99 208 T
+0 F
+( and) 308.59 208 T
+2 F
+(cmd=NULL) 331.92 208 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(priv_lvl) 78 186 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(privilege level to be assigned.) 186 186 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(remote_user) 78 164 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(remote userid \050) 186 164 T
+2 F
+(authen_method) 258.65 164 T
+0 F
+( must =) 352.25 164 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_METH_RCMD) 186 150 T
+0 F
+(\051) 366 150 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(remote_host) 78 128 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(remote host \050) 186 128 T
+2 F
+(authen_method) 249.32 128 T
+0 F
+( must =) 342.92 128 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHEN_METH_RCMD) 186 114 T
+0 F
+(\051) 366 114 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(callback) 78 92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Indicates that callback should be done. V) 186 92 T
+(alue is NULL, or a dialstring.) 382.3 92 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(T) 229.39 712 T
+(able 1: Attribute-value Pairs) 236.29 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A) 91.1 686 T
+(TTRIBUTE) 98.88 686 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(V) 333.44 686 T
+(ALUE\050s\051) 340.56 686 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 701.75 72 84.25 2 L
+V
+0.5 H
+0 Z
+N
+180 702.25 180 83.75 2 L
+V
+N
+540 701.75 540 84.25 2 L
+V
+N
+71.75 702 540.25 702 2 L
+V
+N
+72.25 677.25 539.75 677.25 2 L
+V
+N
+72.25 674.75 539.75 674.75 2 L
+V
+N
+71.75 612 540.25 612 2 L
+V
+N
+71.75 562 540.25 562 2 L
+V
+N
+71.75 526 540.25 526 2 L
+V
+N
+71.75 504 540.25 504 2 L
+V
+N
+71.75 482 540.25 482 2 L
+V
+N
+71.75 460 540.25 460 2 L
+V
+N
+71.75 438 540.25 438 2 L
+V
+N
+71.75 402 540.25 402 2 L
+V
+N
+71.75 352 540.25 352 2 L
+V
+N
+71.75 330 540.25 330 2 L
+V
+N
+71.75 308 540.25 308 2 L
+V
+N
+71.75 272 540.25 272 2 L
+V
+N
+71.75 236 540.25 236 2 L
+V
+N
+71.75 200 540.25 200 2 L
+V
+N
+71.75 178 540.25 178 2 L
+V
+N
+71.75 142 540.25 142 2 L
+V
+N
+71.75 106 540.25 106 2 L
+V
+N
+71.75 84 540.25 84 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "13" 13
+%%Page: "14" 14
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 14 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(For all boolean attributes, valid values are \322) 90 577.33 T
+2 F
+(true) 264.97 577.33 T
+0 F
+(\323 or \322) 288.97 577.33 T
+2 F
+(false) 311.18 577.33 T
+0 F
+(\323.) 341.18 577.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If a host is speci\336ed in a) 90 561.33 T
+2 F
+(cmd-arg) 189.71 561.33 T
+0 F
+( or) 231.71 561.33 T
+2 F
+(addr) 245.04 561.33 T
+0 F
+(, it is recommended that it be speci\336ed as an numeric address so as) 268.64 561.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(to avoid any ambiguities.) 72 549.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(In the case of rcmd authorizations, the) 90 533.33 T
+2 F
+(authen_method) 245.52 533.33 T
+0 F
+( will be set to) 323.52 533.33 T
+2 F
+(TAC_PLUS_AUTHEN_METH_RCMD) 379.91 533.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(and the) 72 521.33 T
+2 F
+(remote_user) 103.66 521.33 T
+0 F
+( and) 169.66 521.33 T
+2 F
+(remote_host) 189.1 521.33 T
+0 F
+( attributes will provide the remote user and host information to enable) 255.1 521.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(rhost style authorization. The response may wish to set a privilege level.) 72 509.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The) 90 493.33 T
+2 F
+(protocol) 108.05 493.33 T
+0 F
+( attribute is intended for use with PPP) 156.05 493.33 T
+(. When) 306.33 493.33 T
+2 F
+(service) 337.71 493.33 T
+0 F
+( equals \322ppp\323 and) 379.71 493.33 T
+2 F
+(protocol) 453.58 493.33 T
+0 F
+( equals) 501.58 493.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(LCP) 72 481.33 T
+(, the message describes the PPP link layer service. For other values of) 89.23 481.33 T
+2 F
+(protocol) 371.13 481.33 T
+0 F
+(, this describes a PPP NCP) 419.13 481.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\050network layer service\051. A single PPP session can support multiple NCPs.) 72 469.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The attributes) 90 453.33 T
+2 F
+(addr) 147.77 453.33 T
+0 F
+(,) 171.37 453.33 T
+2 F
+(inacl) 176.37 453.33 T
+0 F
+(,) 206.37 453.33 T
+2 F
+(outacl) 211.37 453.33 T
+0 F
+(,) 247.37 453.33 T
+2 F
+(route) 252.37 453.33 T
+0 F
+( and) 282.37 453.33 T
+2 F
+(routing) 301.81 453.33 T
+0 F
+( may be used for all network protocol types that) 343.81 453.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.32 (are supported. Their format and meaning is deterined by the values of the) 72 441.33 P
+2 F
+-0.77 (service) 363.88 441.33 P
+0 F
+-0.32 ( or) 405.88 441.33 P
+2 F
+-0.77 (protocol) 418.56 441.33 P
+0 F
+-0.32 ( attributes. Not all) 466.56 441.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(are necessarily implemented for any given network protocol.) 72 429.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.2.2) 122.4 397.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The authorization) 151.2 397.33 T
+3 F
+(RESPONSE) 230.65 397.33 T
+1 F
+( packet body) 278.65 397.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 367.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 351.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    status      |     arg cnt    |         server_msg len          |) 72 335.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 319.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +            data len             |    arg 1 len   |    arg 2 len   |) 72 303.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 287.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |      ...       |   arg N len    |         server_msg ...) 72 271.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 255.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   data ...) 72 239.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 223.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 1 ...) 72 207.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 191.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 2 ...) 72 175.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 159.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   ...) 72 143.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 127.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg N ...) 72 111.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 95.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 12 Q
+(callback-line) 78 662 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The line number to use for a callback.) 186 662 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(callback-) 78 640 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(rotary) 78 626 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The rotary number to use for a callback.) 186 640 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(...) 78 604 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(T) 229.39 712 T
+(able 1: Attribute-value Pairs) 236.29 712 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A) 91.1 686 T
+(TTRIBUTE) 98.88 686 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(V) 333.44 686 T
+(ALUE\050s\051) 340.56 686 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 701.75 72 596.25 2 L
+V
+0.5 H
+0 Z
+N
+180 702.25 180 595.75 2 L
+V
+N
+540 701.75 540 596.25 2 L
+V
+N
+71.75 702 540.25 702 2 L
+V
+N
+72.25 677.25 539.75 677.25 2 L
+V
+N
+72.25 674.75 539.75 674.75 2 L
+V
+N
+71.75 654 540.25 654 2 L
+V
+N
+71.75 618 540.25 618 2 L
+V
+N
+71.75 596 540.25 596 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "14" 14
+%%Page: "15" 15
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 15 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(status) 122.4 697.33 T
+0 F
+( - This \336eld indicates the authorization status) 158.4 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHOR_STATUS_PASS_ADD) 144 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 682.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHOR_STATUS_PASS_REPL) 144 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 666.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHOR_STATUS_FAIL) 144 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x10) 342 650.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_AUTHOR_STATUS_ERROR) 144 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x11) 342 634.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.48 (server_msg) 122.4 618.33 P
+0 F
+-0.2 ( -This \336eld contains an ascii message that SHOULD be presented to the user by the client.) 182.4 618.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(data) 122.4 603.33 T
+0 F
+( - May be used for administrative messages.) 146.4 603.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(arg_cnt) 122.4 588.33 T
+0 F
+( - The number of authorization ar) 164.4 588.33 T
+(guments to follow) 297.52 588.33 T
+(.) 369.65 588.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(arg) 122.4 573.33 T
+0 F
+( - An attribute-value pair that describes the command to be performed. \050see below\051) 140.4 573.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(There are three) 90 558.33 T
+2 F
+(status) 153.02 558.33 T
+0 F
+( values. If the) 189.02 558.33 T
+2 F
+(status) 245.95 558.33 T
+0 F
+( equals) 281.95 558.33 T
+2 F
+(TAC_PLUS_AUTHOR_STATUS_FAIL) 312.5 558.33 T
+0 F
+(, then the) 474.5 558.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(appropriate action is to deny the user action. If the status equals) 72 546.33 T
+2 F
+(TAC_PLUS_AUTHOR_STATUS_PASS_ADD) 328.9 546.33 T
+0 F
+(, then) 514.9 546.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the ar) 72 534.33 T
+(guments speci\336ed in the request are authorized and the ar) 94.31 534.33 T
+(guments in the response are to be used in addition to) 323.8 534.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(those ar) 72 522.33 T
+(guments. If the) 103.2 522.33 T
+2 F
+(status) 165.97 522.33 T
+0 F
+( equals) 201.97 522.33 T
+2 F
+(TAC_PLUS_AUTHOR_STATUS_PASS_REPL) 232.52 522.33 T
+0 F
+( then the ar) 424.52 522.33 T
+(guments in the) 469.05 522.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(request are to completely replaced by the ar) 72 510.33 T
+(guments in the response. If the intended action is to approve the) 246.49 510.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(authorization with no modi\336cations, then the) 72 498.33 T
+2 F
+(status) 253.94 498.33 T
+0 F
+( should be set to) 289.94 498.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHOR_STATUS_PASS_ADD) 72 486.33 T
+0 F
+( and the) 258 486.33 T
+2 F
+(arg_cnt) 292.16 486.33 T
+0 F
+( should be set to 0.) 334.16 486.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_AUTHOR_STATUS_ERROR) 72 474.33 T
+0 F
+( indicates an unknown error occurred on the server) 240 474.33 T
+(.) 442.72 474.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If an error is set, then the) 90 458.33 T
+2 F
+(server_msg) 192.75 458.33 T
+0 F
+( MA) 252.75 458.33 T
+(Y contain ascii text to be presented to the user and) 270.44 458.33 T
+2 F
+(data) 474.57 458.33 T
+0 F
+( MA) 498.57 458.33 T
+(Y) 516.26 458.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(contain ascii text to be presented on an administrative display) 72 446.33 T
+(, console or log. None of the ar) 317.71 446.33 T
+(guments have any) 441.67 446.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(relevance if an error is set.) 72 434.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "15" 15
+%%Page: "16" 16
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 16 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.3) 97.2 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Accounting) 122.4 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.24 (T) 90 697.33 P
+-0.24 (ACACS+ accounting is very similar to authorization. The packet format is very similar) 95.31 697.33 P
+-0.24 (. There is a \336xed portion) 440.59 697.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(and an extensible portion. The extensible portion uses all the same attribute-value pairs that authorization uses, and) 72 685.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(adds several more.) 72 673.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.3.1) 122.4 641.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The account) 151.2 641.33 T
+3 F
+(REQUEST) 206.2 641.33 T
+1 F
+( packet body) 248.2 641.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 611.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 595.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |      f) 72 579.33 T
+(lags     |  authen method |    priv_lvl    |  authen type   |) 150 579.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 563.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     | authen service |    user len    |    port len    |  rem addr len  |) 72 547.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 531.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |    arg cnt     |   arg 1 len    |   arg 2 len    |      ...       |) 72 515.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 499.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg N len    |    user ...) 72 483.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 467.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   port ...) 72 451.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 435.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   rem addr ...) 72 419.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 403.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 1 ...) 72 387.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 371.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg 2 ...) 72 355.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 339.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   ...) 72 323.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 307.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |   arg N ...) 72 291.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 275.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(f) 122.4 227.33 T
+(lags) 128.4 227.33 T
+0 F
+( - This holds bitmapped \337ags.) 152.4 227.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_ACCT_FLAG_MORE) 144 212.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 212.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_ACCT_FLAG_START) 144 196.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 196.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_ACCT_FLAG_STOP) 144 180.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x04) 342 180.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_ACCT_FLAG_WATCHDOG) 144 164.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x08) 342 164.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(All other \336elds are de\336ned in the authorization and authentication sections above and have the same semantics.) 90 132.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The following new attributes are de\336ned for T) 90 116.33 T
+(ACACS+ accounting only) 274.44 116.33 T
+(. When these attribute-value pairs are) 379.43 116.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(included in the ar) 72 104.33 T
+(gument list, they should precede any attribute-value pairs that are de\336ned in the authorization) 141.53 104.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(section above. The accounting attributes are:) 72 92.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "16" 16
+%%Page: "17" 17
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 17 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(All numeric values in an attribute-value string are provided as decimal ascii numbers.) 90 269.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(T) 198.56 690 T
+(able 2: Accounting Attribute-value Pairs) 205.46 690 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A) 91.1 664 T
+(TTRIBUTE) 98.88 664 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(V) 333.44 664 T
+(ALUE\050s\051) 340.56 664 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(event_id) 78 640 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(Start and stop records for the same event will have matching \050unique\051) 186 640 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(event_id) 186 626 T
+0 F
+(\325) 243.6 626 T
+(s) 246.94 626 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(start_time) 78 604 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The time the action started \050in seconds since the epoch, 12:00am Jan 1) 186 604 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(1970\051.) 186 590 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(stop_time) 78 568 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The time the action stopped \050in seconds since the epoch.\051) 186 568 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(elapsed_time) 78 546 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.1 (The elapsed time in seconds for the action. Useful when the device does) 186 546 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(not have real time.) 186 532 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(bytes) 78 510 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The number of bytes transferred by this action) 186 510 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(bytes_in) 78 488 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The number of input bytes transferred by this action) 186 488 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(bytes_out) 78 466 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The number of output bytes transferred by this action) 186 466 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(packets) 78 444 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The number of packets transferred by this action.) 186 444 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(packets_in) 78 422 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The number of input packets transferred by this action.) 186 422 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(packets_out) 78 400 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(The number of output packets transferred by this action.) 186 400 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(status) 78 378 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.46 (The numeric status value associated with the action. This is a signed four) 186 378 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(\0504\051 byte word in network byte order) 186 364 T
+(. 0 is de\336ned as success. Negative) 357.3 364 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(numbers indicate errors. Positive numbers indicate non-error failures.) 186 350 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The exact status values may be de\336ned by the client.) 186 336 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(err_msg) 78 314 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+(An ascii string describing the status of the action.) 186 314 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+72 679.75 72 306.25 2 L
+V
+0.5 H
+0 Z
+N
+180 680.25 180 305.75 2 L
+V
+N
+540 679.75 540 306.25 2 L
+V
+N
+71.75 680 540.25 680 2 L
+V
+N
+72.25 655.25 539.75 655.25 2 L
+V
+N
+72.25 652.75 539.75 652.75 2 L
+V
+N
+71.75 618 540.25 618 2 L
+V
+N
+71.75 582 540.25 582 2 L
+V
+N
+71.75 560 540.25 560 2 L
+V
+N
+71.75 524 540.25 524 2 L
+V
+N
+71.75 502 540.25 502 2 L
+V
+N
+71.75 480 540.25 480 2 L
+V
+N
+71.75 458 540.25 458 2 L
+V
+N
+71.75 436 540.25 436 2 L
+V
+N
+71.75 414 540.25 414 2 L
+V
+N
+71.75 392 540.25 392 2 L
+V
+N
+71.75 328 540.25 328 2 L
+V
+N
+71.75 306 540.25 306 2 L
+V
+N
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "17" 17
+%%Page: "18" 18
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 18 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 F
+(5.3.2) 122.4 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The accounting) 151.2 697.33 T
+3 F
+(REPLY) 219.54 697.33 T
+1 F
+( packet body) 249.54 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 F
+-0.27 (The response to an accounting message is used to indicate that the accounting function on the server has returned) 90 683.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.04 (and presumably has committed the record. This provides the client the best possible guarantee that the data is indeed) 72 671.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(logged.) 72 659.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(      1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8  1 2 3 4 5 6 7 8) 72 627.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 611.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |         server_msg len          |            data len             |) 72 595.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 579.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |     status     |         server_msg ...) 72 563.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+----------------+----------------+----------------+) 72 547.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     |     data ...) 72 531.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(     +----------------+) 72 515.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(status) 122.4 483.33 T
+0 F
+( - This is the return status. V) 158.4 483.33 T
+(alues are:) 271.17 483.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(TAC_PLUS_ACCT_STATUS_SUCCESS) 144 468.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x01) 342 468.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(TAC_PLUS_ACCT_STATUS_ERROR) 144 452.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(:= 0x02) 342 452.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(server_msg) 122.4 436.33 T
+0 F
+( - This is an ascii string that may be presented to the user) 182.4 436.33 T
+(. The decision to present this) 409.32 436.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(message is client speci\336c.) 144 424.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(data) 122.4 409.33 T
+0 F
+( - This is an ascii string that may be presented on an administrative display) 146.4 409.33 T
+(, console or log. The) 444.61 409.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(decision to present this message is client speci\336c.) 144 397.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(If the) 90 366.33 T
+2 F
+(TAC_PLUS_ACCT_FLAG_MORE) 113.88 366.33 T
+0 F
+( \337ag is set, then this indicates that further accounting messages are) 251.88 366.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.26 (pending as part of this session. If it is not set, then there is no further accounting information and the server may close) 72 354.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the TCP connection.) 72 342.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(The) 90 326.33 T
+2 F
+(TAC_PLUS_ACCT_FLAG_START) 108.05 326.33 T
+0 F
+( \337ag indicates that this is a start accounting message. Start messages) 252.05 326.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.14 (should only be sent once when a service is started. The) 72 314.33 P
+2 F
+-0.33 (TAC_PLUS_ACCT_FLAG_STOP) 292.68 314.33 P
+0 F
+-0.14 ( indicates that this is a stop) 430.68 314.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(record and that the service has terminated. The) 72 302.33 T
+2 F
+(TAC_PLUS_ACCT_FLAG_WATCHDOG) 261.67 302.33 T
+0 F
+( \337ag means that this is an) 423.67 302.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(update record. Update records are sent at the client\325) 72 290.33 T
+(s discretion when the service is still running.) 277.77 290.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(6.0) 72 263 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Notes to Implementors) 97.2 263 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+(For those interested in integrating one-time password support into T) 90 245.33 T
+(ACACS+ servers, there are some subtle) 361.68 245.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.01 (gotchas to consider) 72 233.33 P
+-0.01 (. For most cases, T) 148.65 233.33 P
+-0.01 (ACACS+ is designed to make this very straighforward. But two cases come to) 223.37 233.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(mind that are not so simple. One-time password support with ARAP and PPP\325) 72 221.33 T
+(s CHAP authenticaiton protocols is) 384.5 221.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.28 (NOT straightforward, but there are not-so-dif) 72 209.33 P
+-0.28 (\336cult work arounds. The problem lies in the nature of ARAP and CHAP) 252.03 209.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(authentication. Both are doing a challenge-response protocol that requires a copy of the cleartext password to be) 72 197.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(stored at both ends. Unfortunately) 72 185.33 T
+(, due to their cryptographic nature, one-time password systems rarely can provide) 207.72 185.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(the cleartext version of the next password. A simple workaround is to have the user enter their username as a) 72 173.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-0.2 (combination of the username and the one-time password, separated by a special character) 72 161.33 P
+-0.2 (. Then a \336xed password can) 427.04 161.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(be sent in the password \336eld. The \336xed password can be assigned on a per user basis or as a single site-wide) 72 149.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(password. For the separator character) 72 137.33 T
+(, cisco Systems has been using the \324*\325 \050asterix\051 character) 221.27 137.33 T
+(. After some head) 447.33 137.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(scratching, it was decided that it was the least likely character to be found in a username.) 72 125.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+1 12 Q
+(7.0) 72 98 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Refer) 97.2 98 T
+(ences) 125.63 98 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 10 Q
+([1] Carrel, D., Grant, L.,) 97.2 80.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "18" 18
+%%Page: "19" 19
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 7 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(May 31, 1995 3:20 pm) 72 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+( T) 311.55 750.33 T
+(ACACS+: Protocol Speci\336cation: ENG-#### Rev 1.58) 319.36 750.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(A printed version of this document is an uncontrolled copy.) 186.85 56.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Cisco Systems, Inc.) 72 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(Page 19 of 19) 288 44.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+-1.25 (Company Confidential) 448.61 44.33 P
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(      \322The T) 97.2 713.33 T
+(ACACS+ API De\336nition\323) 140 713.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+([2] Finseth, C.,) 97.2 697.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(      RFC 1492, \322An Access Control Protocol, Sometimes Called T) 97.2 681.33 T
+(ACACS\323,) 361.4 681.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+(      July 1993.) 97.2 665.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+FMENDPAGE
+%%EndPage: "19" 19
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 19
+%%DocumentFonts: Times-Roman
+%%+ Times-Bold
+%%+ Courier
+%%+ Courier-Bold
+%%EOF

@@ -1,0 +1,19 @@
+		action		priv_lev	auth_type	service	   m p
+		------		--------	---------	-------	   - -
+enable		AUTHEN_LOGIN	implemen.	unused		SVC_ENABLE 
+inb. ascii log	AUTHEN_LOGIN			TYPE_ASCII	
+inb. PAP login	AUTHEN_LOGIN			TYPE_PAP		   1 1
+inb CHAP login	AUTHEN_LOGIN			TYPE_CHAP		   1 1
+inb MS-CHAP log	AUTHEN_LOGIN			TYPE_MSCHAP		   1 1
+inb ARAP login	AUTHEN_LOGIN			TYPE_ARAP		   1 1
+
+out ASCII	AUTHEN_SENDAUTH			TYPE_ASCII	=> error
+out PAP		AUTHEN_SENDAUTH			TYPE_PAP		   1 1
+out CHAP	AUTHEN_SENDAUTH			TYPE_CHAP		   1 1
+out MS_CHAP	AUTHEN_SENDAUTH			TYPE_MSCHAP		   1 1
+out ARAP	AUTHEN_SENDAUTH			TYPE_ARAP	=> error
+
+Ascii ch pass	AUTHEN_CHPASS			TYPE_ASCII
+PAP ch pass	AUTHEN_CHPASS			TYPE_PAP	=> error
+CHAP ch pass	AUTHEN_CHPASS			TYPE_CHAP	=> error
+ARAP ch pass	AUTHEN_CHPASS			TYPE_ARAP		     1
