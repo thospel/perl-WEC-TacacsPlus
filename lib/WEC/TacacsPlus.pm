@@ -1,6 +1,6 @@
 package WEC::TacacsPlus;
 use 5.006001;
-our $VERSION = '0.01';
+our $VERSION = '1.000';
 
 
 1;

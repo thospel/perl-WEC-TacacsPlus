@@ -6,7 +6,7 @@ use Carp;
 
 use WEC::TacacsPlus::Connection;
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 
 use base qw(WEC::Server);
 # use fields qw(secret);

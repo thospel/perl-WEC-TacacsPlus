@@ -7,7 +7,7 @@ use Carp;
 use WEC::TacacsPlus::Connection;
 use WEC::TacacsPlus::Constants qw(PORT);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 
 use base qw(WEC::Client);
 # use fields qw(secret);

@@ -10,7 +10,7 @@ use WEC::TacacsPlus::Constants qw(:Session :HeaderFlags);
 use WEC::TacacsPlus::Session;
 use WEC::Connection qw(SERVER CLIENT);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 
 use base qw(WEC::Connection);
 # use fields qw(secret header);

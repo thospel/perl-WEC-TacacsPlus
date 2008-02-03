@@ -6,7 +6,7 @@ use Carp;
 
 use WEC::TacacsPlus::Constants qw(:all);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
 
 use base qw(WEC::Flow);
@@ -261,7 +261,7 @@ use WEC::TacacsPlus::Constants
        AUTHEN_STATUS_FOLLOW AUTHEN_STATUS_RESTART
        AUTHEN_STATUS_GETDATA AUTHEN_STATUS_GETUSER AUTHEN_STATUS_GETPASS);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 use base qw(WEC::TacacsPlus::Session);
 
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
@@ -440,7 +440,7 @@ use WEC::TacacsPlus::Constants
        AUTHEN_STATUS_FOLLOW AUTHEN_STATUS_RESTART
        AUTHEN_STATUS_GETDATA AUTHEN_STATUS_GETUSER AUTHEN_STATUS_GETPASS);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 use base qw(WEC::TacacsPlus::Session);
 
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
@@ -640,7 +640,7 @@ use Carp;
 use WEC::TacacsPlus::Constants
     qw(AUTHOR AUTHOR_STATUS_FAIL AUTHOR_STATUS_FOLLOW);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 use base qw(WEC::TacacsPlus::Session);
 
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
@@ -749,7 +749,7 @@ use WEC::TacacsPlus::Constants
     qw(AUTHOR AUTHOR_STATUS_FOLLOW
        AUTHEN_METH_NOT_SET AUTHEN_TYPE_ASCII);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 use base qw(WEC::TacacsPlus::Session);
 
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
@@ -868,7 +868,7 @@ use Carp;
 use WEC::TacacsPlus::Constants
     qw(ACCT ACCT_STATUS_SUCCESS ACCT_STATUS_FOLLOW);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 use base qw(WEC::TacacsPlus::Session);
 
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
@@ -977,7 +977,7 @@ use WEC::TacacsPlus::Constants
     qw(ACCT ACCT_STATUS_FOLLOW AUTHEN_METH_NOT_SET AUTHEN_TYPE_ASCII
        ACCT_FLAG_STOP ACCT_FLAG_START ACCT_FLAG_WATCHDOG);
 
-our $VERSION = "0.01";
+our $VERSION = "1.000";
 use base qw(WEC::TacacsPlus::Session);
 
 our @CARP_NOT = qw(WEC::TacacsPlus::Connection);
