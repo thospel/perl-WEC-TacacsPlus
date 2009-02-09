@@ -1,9 +1,9 @@
-# Generated on 2008-02-03 22:38:43 UT using /usr/local/bin/release_pm
+# Generated on 2009-02-09 09:30:42 UT using /usr/local/bin/release_pm
 BEGIN
 DIGITS 3
 RELEASE 1.000
-VERSION 29187bd6ce73c3f06864f15fc9ea46e1 1.000 Changes
-VERSION 00ffd123232c22ddd1fe213825e08d3b 1.000 Makefile.PL
+VERSION 3032a6cbc060f8ae70bd94c80daee927 1.000 Changes
+VERSION 2b5e082bab91ed42c80ba60e9f9ad4cc 1.000 Makefile.PL
 VERSION f39225a48c1858f7f868fe20a4e74685 1.000 MANIFEST
 VERSION b91ba6ad0a3ed931ae4d536574e1216b 1.000 README
 VERSION a30d8ae92dd82f9e09b7a5986cc27a52 1.000 lib/WEC/TacacsPlus.pm
