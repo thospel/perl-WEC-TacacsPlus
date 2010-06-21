@@ -35,7 +35,7 @@ sub init {
     $client->{secret} = delete $params->{Secret};
     utf8::downgrade($client->{secret}, 1) || croak "Wide character in secret";
     if (defined $client->{destination}) {
-        $client->{destination} = "tcp://" . $client->{destination} unless 
+        $client->{destination} = "tcp://" . $client->{destination} unless
             $client->{destination} =~ m!\A\w+://!;
         $client->{destination} .= ":" . PORT if
             $client->{destination} =~ m!\Atcp://[^:]+$!i;
@@ -44,7 +44,7 @@ sub init {
 
 sub secret {
     return shift->{secret};
-}    
+}
 
 sub connect : method {
     my $c = shift->SUPER::connect(shift, shift);

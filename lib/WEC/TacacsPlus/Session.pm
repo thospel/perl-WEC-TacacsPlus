@@ -363,7 +363,7 @@ sub reply {
     $session->{parent} ||
         croak "Cannot reply on a dropped authentication session";
     if ($session->{seq_no} %2 == 0) {
-        # Triggerable by doing a reply that does not drop and then doing 
+        # Triggerable by doing a reply that does not drop and then doing
         # a reply again before receiving anything
         $session->_drop;
         croak "Unexpected sequence number $session->{seq_no}";
@@ -426,7 +426,7 @@ sub reply {
     $@ =~ s/\n\z//;
     # This leaks data to the clients. Probably should be configurable
     # Reply already does $session->_drop
-    $session->reply(Status	=> "Error", 
+    $session->reply(Status	=> "Error",
                     Message => $server_error_message,
                     Data	=> $@);
     # die $@;
@@ -674,7 +674,7 @@ sub got {
          Args => \@args);
     # Don't $session->_drop. The replying will do the drop
     return if $session->{seq_no} == 2;
-    die "Weird jump in sequence number from 1 to $session->{seq_no}\n" if 
+    die "Weird jump in sequence number from 1 to $session->{seq_no}\n" if
         $session->{seq_no} != 1;
     die "No authorization reply was sent\n" unless $session->{ended};
 }
@@ -737,7 +737,7 @@ sub reply {
     $@ =~ s/\n\z//;
     # This leaks data to the clients. Probably should be configurable
     # Reply already does $session->_drop
-    $session->reply(Status	=> "Error", 
+    $session->reply(Status	=> "Error",
                     Message => $server_error_message,
                     Data	=> $@);
     # die $@;
@@ -911,7 +911,7 @@ sub got {
     $session->{options}{Account}->(@result);
     # Don't $session->_drop. The replying will do the drop
     return if $session->{seq_no} == 2;
-    die "Weird jump in sequence number from 1 to $session->{seq_no}\n" if 
+    die "Weird jump in sequence number from 1 to $session->{seq_no}\n" if
         $session->{seq_no} != 1;
     die "No accounting reply was sent\n" unless $session->{ended};
 }
@@ -965,7 +965,7 @@ sub reply {
     $@ =~ s/\n\z//;
     # This leaks data to the clients. Probably should be configurable
     # Reply already does $session->_drop
-    $session->reply(Status	=> "Error", 
+    $session->reply(Status	=> "Error",
                     Message => $server_error_message,
                     Data	=> $@);
     # die $@;

@@ -230,7 +230,7 @@ for my $type qw(Unix Tcp) {
     # Try to make a server
     make_socket;
     WEC->init;
-    $server = eval { 
+    $server = eval {
         WEC::TacacsPlus::Server->new
             (Handle => $socket,
              $socket_type eq "Unix" ? (Paths => $destination) : ()) };
@@ -554,7 +554,7 @@ for my $type qw(Unix Tcp) {
           Restart	=> 1,
           Echo		=> 1,
           Message	=> "",
-          Data		=> { 
+          Data		=> {
               ord("a") => 1,
               ord("b") => 1,
               ord("c") => 1,
@@ -584,7 +584,7 @@ for my $type qw(Unix Tcp) {
           Restart	=> 1,
           Echo		=> 1,
           Message	=> "",
-          Data		=> { 
+          Data		=> {
               ASCII	=> 1,
               ARAP	=> 1,
               PAP	=> 1,
@@ -614,7 +614,7 @@ for my $type qw(Unix Tcp) {
           Restart	=> 1,
           Echo		=> 1,
           Message	=> "",
-          Data		=> { 
+          Data		=> {
               ASCII	=> 1,
               ARAP	=> 1,
               PAP	=> 1,
@@ -3008,7 +3008,7 @@ for my $type qw(Unix Tcp) {
     for my $secret (undef, "squeamish ossifrage") {
         my ($now, $end);
         $hit = 0;
-        my %send_request = 
+        my %send_request =
             (Event	=> "stop",
              Method	=> "tacacs+",
              Privilege	=> "root",
@@ -3041,7 +3041,7 @@ for my $type qw(Unix Tcp) {
                        shift->reply(Status => "success",
                                     Message =>"yYy", Data => "zZ");
                    },
-                   Close => sub { 
+                   Close => sub {
                        $server = "";
                        unloop;
                    }]);
