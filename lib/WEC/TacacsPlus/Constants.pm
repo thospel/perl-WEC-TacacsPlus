@@ -1,7 +1,7 @@
 package WEC::TacacsPlus::Constants;
 use 5.008;
-use warnings;
 use strict;
+use warnings;
 
 use Exporter::Tidy
     Session		=> [qw(AUTHEN AUTHOR ACCT MAX_TYPE)],
