@@ -222,7 +222,7 @@ for my $type qw(Unix Tcp) {
 
     # Try to make a client
     $client = eval { WEC::TacacsPlus::Client->new };
-    ok(!$@, "Could create client");
+    is($@, "", "Could create client");
     # Free client
     $client = undef;
     check_objects;
@@ -235,7 +235,7 @@ for my $type qw(Unix Tcp) {
             (Handle => $socket,
              $socket_type eq "Unix" ? (Paths => $destination) : ()) };
     $socket = undef;
-    ok(!$@, "Could create server");
+    is($@, "", "Could create server");
     # Free server
     $server = undef;
     check_objects;
