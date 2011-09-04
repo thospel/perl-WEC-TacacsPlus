@@ -7,10 +7,13 @@ our $VERSION = '1.000';
 WriteMakefile
     (NAME	=> 'WEC::TacacsPlus',
      VERSION	=> '0.01',
+     BUILD_REQUIRES	=> {
+	 # Only for the tests
+	 "Test::More"	=> "0.01",
+     },
      PREREQ_PM	=> {
          WEC			=> 0.01,
          "Exporter::Tidy"	=> 0.05,
-         "Test::More"		=> 0.11,	# For the tests only
      },
      AUTHOR	=> 'Ton Hospel <WEC-TacacsPlus@ton.iguana.be>',
      $^O eq "MSWin32" ? (
